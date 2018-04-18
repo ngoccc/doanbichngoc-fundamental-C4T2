@@ -11,4 +11,3 @@ class st:
 s1 = st()
 st.get_String(s1, "hello")
 st.print_String(s1)
-# ờm wtf ;-;-;
