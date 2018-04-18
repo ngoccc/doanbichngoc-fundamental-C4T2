@@ -1,13 +1,14 @@
-class Str:
-    str = ""
+class st:
+    s = ""
 
-    def get_String(self, s):
-        self.str = s
+    def get_String(self, ss):
+        self.s = ss
 
     def print_String(self):
-        return print(self.str.upper())
+        return print(self.s.upper())
 
 
-s1 = Str.get_String("Hello")
-Str.print_String(s1)
+s1 = st()
+st.get_String(s1, "hello")
+st.print_String(s1)
 # ờm wtf ;-;-;
