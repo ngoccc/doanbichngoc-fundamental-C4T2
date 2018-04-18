@@ -1,8 +1,8 @@
 class Employee:
     isReceivedOrder = False
 
-    def Receive_Order(self, foodName):
-        if self.isReceivedOrder == True:
+    def Receive_Order(self, foodName, customer):
+        if self.isReceivedOrder == True and customer.food == foodName:
             return foodName
 
 
@@ -24,11 +24,6 @@ class Food:
 
 ngoc = Customer()
 anhBien = Employee()
-anhQuy = Employee()
 Food.Lunch("My van than")
-Food.Lunch("Pho bo")
-Food.Lunch("Bun oc")
 Customer.Order(ngoc, "My van than", anhBien)
-Customer.Order(ngoc, "Bun oc", anhQuy)
-print(Employee.Receive_Order(anhBien, "My van than"))
-print(Employee.Receive_Order(anhQuy, "Bun oc"))
+print(Employee.Receive_Order(anhBien, "My van than", ngoc))

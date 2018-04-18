@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="12a9a7c8-0d9c-495c-a6f9-4d0d499b1945" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lesson4.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lesson4.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/homework/HW_1.py" beforeDir="false" afterPath="$PROJECT_DIR$/homework/HW_1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/homework/HW_3.py" beforeDir="false" afterPath="$PROJECT_DIR$/homework/HW_3.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/homework/HW_9.py" beforeDir="false" afterPath="$PROJECT_DIR$/homework/HW_9.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,20 +14,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="HW_1.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="HW_1.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/homework/HW_1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="15" column="36" lean-forward="true" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HW_9.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/homework/HW_9.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="726">
-              <caret line="33" column="47" selection-start-line="33" selection-start-column="47" selection-end-line="33" selection-end-column="47" />
+            <state relative-caret-position="249">
+              <caret line="16" column="28" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -73,9 +61,9 @@
         <option value="$PROJECT_DIR$/homework/HW_8.py" />
         <option value="$PROJECT_DIR$/homework/HW_10.py" />
         <option value="$PROJECT_DIR$/Lesson4.py" />
-        <option value="$PROJECT_DIR$/homework/HW_1.py" />
         <option value="$PROJECT_DIR$/homework/HW_3.py" />
         <option value="$PROJECT_DIR$/homework/HW_9.py" />
+        <option value="$PROJECT_DIR$/homework/HW_1.py" />
       </list>
     </option>
   </component>
@@ -280,16 +268,22 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="65" />
+      <option name="time" value="80" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">
         <watch expression="newList" language="Python" />
+        <watch expression="ngoc.food" language="Python" />
       </configuration>
     </watches-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="watch">
+      <expression>
+        <expression-string>ngoc.food</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>newList</expression-string>
         <language-id>Python</language-id>
@@ -446,13 +440,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/homework/HW_1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="15" column="36" lean-forward="true" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Lesson4.1.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="363">
@@ -462,8 +449,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/homework/HW_9.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="726">
-          <caret line="33" column="47" selection-start-line="33" selection-start-column="47" selection-end-line="33" selection-end-column="47" />
+        <state relative-caret-position="227">
+          <caret line="28" column="57" selection-start-line="28" selection-start-column="57" selection-end-line="28" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/homework/HW_1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="16" column="28" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
         </state>
       </provider>
     </entry>

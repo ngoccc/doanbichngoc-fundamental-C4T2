@@ -15,5 +15,3 @@ def accept_login(u, p):
 user = input("Enter username: ")
 password = input("Enter password: ")
 accept_login(user, password)
-# class User:
-#     def accept_login(user, username, password):
