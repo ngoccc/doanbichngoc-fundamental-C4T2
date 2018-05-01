@@ -141,27 +141,23 @@ class Game():
         self.ball.move()
         if self.ball.hit_paddle1(self.paddles['user1']):
             self.ball.bounce('y')
-            self.score.score1 += 1
 
         if self.ball.hit_paddle2(self.paddles['user2']):
             self.ball.bounce('y')
-            self.score.score2 += 1
         if self.ball.hit_wall1():
             # if self.score.score2 == 5:
             #     return True
             # else:
-            #     pass
+            #     self.score.score2 += 1
+            #     Game.restart()
             return True
         if self.ball.hit_wall2():
             # if self.score.score1 == 5:
             #     return True
             # else:
-            #     pass
+            #     self.score.score1 += 1
+            #     Game.restart()
             return True
-        # if self.score.score1 == 5 or self.score.score2 == 5:
-        #     return True
-        # else: pass
-
         self.draw_arena()
         self.ball.draw()
         self.paddles['user1'].draw()
