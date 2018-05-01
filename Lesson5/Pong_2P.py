@@ -111,6 +111,10 @@ class Ball():
         if self.hit_ceiling() or self.hit_floor():
             self.bounce('x')
 
+    def setpos(self, x, y):
+        self.x = x
+        self.y = y
+
 
 class Game():
     def __init__(self, line_thickness=10, speed=1):
@@ -144,25 +148,29 @@ class Game():
 
         if self.ball.hit_paddle2(self.paddles['user2']):
             self.ball.bounce('y')
+
         if self.ball.hit_wall1():
-            # if self.score.score2 == 5:
-            #     return True
-            # else:
-            #     self.score.score2 += 1
-            #     Game.restart()
-            return True
+            if self.score.score2 == 5:
+                return True
+            else:
+                self.restart()
+                #self.score.score2 += 1
+
         if self.ball.hit_wall2():
-            # if self.score.score1 == 5:
-            #     return True
-            # else:
-            #     self.score.score1 += 1
-            #     Game.restart()
-            return True
+            if self.score.score1 == 5:
+                return True
+            else:
+                self.restart()
+                #self.score.score1 += 1
+
         self.draw_arena()
         self.ball.draw()
         self.paddles['user1'].draw()
         self.paddles['user2'].draw()
         self.score.display(self.score.score1, self.score.score2)
+
+    def restart(self):
+        self.ball.setpos(int(window_width / 2), int(window_height / 2))
 
 
 def main():
