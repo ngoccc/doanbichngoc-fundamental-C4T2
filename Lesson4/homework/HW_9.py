@@ -1,29 +1,37 @@
-class Employee:
-    isReceivedOrder = False
+class Lunch():
+    def __init__(self):
+        self.customer = Customer()
+        self.employee = Employee()
 
-    def Receive_Order(self, foodName, customer):
-        if self.isReceivedOrder == True and customer.food == foodName:
-            return foodName
+    def order(self, foodName):
+        self.customer.placeOrder(foodName, self.employee)
 
-
-class Customer:
-    food = ""
-
-    def Order(self, foodName, employee):
-        self.food = foodName
-        employee.isReceivedOrder = True
+    def result(self):
+        self.customer.printFood()
 
 
-class Food:
-    class Lunch:
-        lunch = ""
+class Customer():
+    def __init__(self):
+        self.food = None
 
-        def __init__(self, l):
-            self.lunch = l
+    def placeOrder(self, foodName, employee):
+        self.food = employee.takeOrder(foodName)
+
+    def printFood(self):
+        print(self.food)
 
 
-ngoc = Customer()
-anhBien = Employee()
-Food.Lunch("My van than")
-Customer.Order(ngoc, "My van than", anhBien)
-print(Employee.Receive_Order(anhBien, "My van than", ngoc))
+class Employee():
+    def takeOrder(self, foodName):
+        return foodName
+
+
+class Food():
+    def __init__(self, name):
+        self.name = name
+
+
+fn = input("Enter food name: ")
+lunch = Lunch()
+lunch.order(fn)
+lunch.result()

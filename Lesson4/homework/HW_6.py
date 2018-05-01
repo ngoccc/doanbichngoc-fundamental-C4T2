@@ -1,13 +1,13 @@
-class st:
+class St:
     s = ""
 
-    def get_String(self, ss):
-        self.s = ss
+    def get_String(self):
+        self.s = input("Enter your string: ")
 
     def print_String(self):
-        return print(self.s.upper())
+        print(self.s.upper())
 
 
-s1 = st()
-st.get_String(s1, "hello")
-st.print_String(s1)
+s1 = St()
+s1.get_String()
+s1.print_String()

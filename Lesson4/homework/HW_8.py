@@ -13,6 +13,6 @@ class Car:
 
 
 c1 = Car()
-Car.setBrand(c1, "Audi")
-Car.setMaxSpeed(c1, 200)
-Car.printData(c1)
+c1.setBrand("Audi")
+c1.setMaxSpeed(200)
+c1.printData()
