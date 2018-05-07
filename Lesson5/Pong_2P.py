@@ -182,7 +182,7 @@ def main():
                 pygame.quit()
                 sys.exit()
             if event.type == KEYDOWN:
-                keys = pygame.key.get_pressed()  # checking pressed keys
+                keys = pygame.key.get_pressed()
                 m1 = 0
                 m2 = 0
                 if keys[pygame.K_UP]:
