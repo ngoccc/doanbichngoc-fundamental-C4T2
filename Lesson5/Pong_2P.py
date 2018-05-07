@@ -1,3 +1,5 @@
+# hự chưa xong đâu ạ a đừng xemm ;-;
+
 import pygame, sys
 from pygame.locals import *
 
@@ -115,6 +117,7 @@ class Ball():
         self.x = x
         self.y = y
 
+# bảo là đừng xem cơ màaa
 
 class Game():
     def __init__(self, line_thickness=10, speed=1):
@@ -168,7 +171,8 @@ class Game():
         self.paddles['user1'].draw()
         self.paddles['user2'].draw()
         self.score.display(self.score.score1, self.score.score2)
-
+    
+    # ơ hay đừng xem nữa mà ạ em đang fix lỗi chỗ nì :"( e đi ngủ đây đã
     def restart(self):
         self.ball.setpos(int(window_width / 2), int(window_height / 2))
 
